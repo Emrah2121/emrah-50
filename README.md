@@ -8,3 +8,6 @@ Bu layihə **React.js** istifadə edilərək hazırlanmış dinamik və interakt
 - Komponentlər vasitəsilə modul yanaşma
 - Dinamik istifadəçi interfeysi
 - Responsive dizayn
+
+# HTML CSS JS version
+  https://emrah2121.github.io/emrah-store/
