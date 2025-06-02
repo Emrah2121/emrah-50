@@ -1,0 +1,191 @@
+#page-header.about-header {
+    background-image: url('https://www.huzuristan.com/wp-content/uploads/2023/05/online-ihracat-basarisi-icin-seo-ve-dijital-pazarlama-stratejileri-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+#page-header.about-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+   
+}
+
+#page-header.about-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+
+#about-head img {
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about-head div {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+}
+
+#about-head div h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#about-head div h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 3px;
+    background: #ff6600;
+}
+
+#about-head div p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#about-app {
+    text-align: center;
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+
+#about-app h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about-app p {
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+#about-app .video {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about-app .video video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#features {
+    padding: 60px 0;
+    background: white;
+}
+
+.feature-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.fe-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+}
+
+.fe-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fe-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.fe-box h6 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.fe-box p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    #page-header.about-header {
+        height: 40vh;
+    }
+
+    #page-header.about-header h2 {
+        font-size: 2rem;
+    }
+
+    #about-head {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    #about-head div {
+        padding: 20px 0;
+    }
+
+    #about-app .video {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    #page-header.about-header {
+        height: 35vh;
+    }
+
+    #page-header.about-header h2 {
+        font-size: 1.8rem;
+    }
+
+    #page-header.about-header p {
+        font-size: 1rem;
+    }
+
+    .fe-box {
+        min-width: 100%;
+    }
+}

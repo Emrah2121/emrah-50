@@ -1,0 +1,277 @@
+.product-detail-container {
+  max-width: 1280px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.product-detail-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  background: #fff;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.image-gallery {
+  flex: 1;
+  min-width: 320px;
+  position: relative;
+}
+
+.main-image {
+  width: 90%;
+  height: 400px;
+  border-radius: 12px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: zoom-in;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  gap: 12px;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.thumbnail-gallery img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.thumbnail-gallery img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.thumbnail-gallery img.active-thumb {
+  border: 2px solid #3a86ff;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.product-info h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #222;
+
+}
+
+.product-info .category {
+  display: inline-block;
+  background: #f0f7ff;
+  color: #3a86ff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.product-info .description {
+  margin: 1.5rem 0;
+  color: #555;
+  line-height: 2;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.product-info .current-price {
+  color: #ff3d71;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.product-info .original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 1.2rem;
+}
+
+.product-info .discount-badge {
+  background: #ff3d71;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.rating-stars {
+  color: #ffc107;
+  display: flex;
+  gap: 2px;
+}
+
+.review-count {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.quantity-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quantity-btn:hover {
+  background: #eee;
+}
+
+.quantity-input {
+  width: 60px;
+  text-align: center;
+  font-size: 1.1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.add-to-cart-btn {
+  padding: 14px 32px;
+  background-color: #3a86ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2667cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 134, 255, 0.3);
+}
+
+.wishlist-btn {
+  padding: 14px 24px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wishlist-btn:hover {
+  background-color: #f9f9f9;
+  border-color: #ccc;
+}
+
+.product-meta {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid #eee;
+}
+
+.meta-item {
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+.brand{
+    margin-right: 10px;
+}
+
+.meta-label {
+  color: #666;
+  min-width: 120px;
+}
+
+.meta-value {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-detail-card {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+  
+  .main-image {
+    height: 300px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .add-to-cart-btn, .wishlist-btn {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.fas, .far, .fab {
+  margin-right: 8px;
+}
+
+.action-buttons .fas {
+  margin-right: 10px;
+}
+
+.rating-container .fas.fa-star {
+  color: #FFD700;
+  margin-right: 2px;
+}
+
+.feature-item .fas {
+  color: #3a86ff;
+  width: 20px;
+  margin-right: 10px;
+}
