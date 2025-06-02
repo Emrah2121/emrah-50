@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/emrah-50/static/css/main.39eae28e.css",
+    "main.js": "/emrah-50/static/js/main.2bdb172d.js",
+    "static/media/contact.jpg": "/emrah-50/static/media/contact.aa67de177c6ef3a6c211.jpg",
+    "index.html": "/emrah-50/index.html",
+    "main.39eae28e.css.map": "/emrah-50/static/css/main.39eae28e.css.map",
+    "main.2bdb172d.js.map": "/emrah-50/static/js/main.2bdb172d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39eae28e.css",
+    "static/js/main.2bdb172d.js"
+  ]
+}
